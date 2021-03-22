@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Number Guessing Game </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="sweetalert/jquery-3.5.1.min.js"></script>
+        <script src="sweetalert/sweetalert2.all.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container" id="playContainer">
+                <h2> Number Guessing Game </h2>
+                <form>
+                    <div class="input-container">
+                        <label> Player Name </label>
+                        <input type="text" id="playerName" required>
+                        <label> Amount </label>
+                        <input type="number" id="amountInput" required>
+                        <button id="play"> Play </button>
+                    </div>
+                </form>
+            </div>
+            <div class="container" id="guessContainer" style="display: none">
+                <p> Welcome <span id="player"> </span></p>
+                <h3> Guess the Number Between 1 to 50 </h3>
+                <p>Balance <span id="balance"> </span></p>
+                    <form>
+                        <div class="input-container">
+                            <label> Enter your Guest Number </label>
+                            <input type="number" id="guessNumber" required>
+                            <label> Amount Bet </label>
+                            <input type="number" id="amountBet" required>
+                            <div class="payout-container">
+                                AMOUNT BET = <span id="bet"> </span> <br>
+                                PAYOUT = <span id="payout"> </span>
+                            </div>
+                            <button id="guess"> Guess The Number </button>
+                            <button id="play-again" style="display: none;"> Play Again </button>
+                            <h4 id="quit"> Quit </h4>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>
